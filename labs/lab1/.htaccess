@@ -1,0 +1,4 @@
+AuthType Basic  
+AuthName "restricted area"  
+AuthUserFile /class-years/y2013/s2dindya/public_html/labs/lab1/.htpasswd  
+require valid-user

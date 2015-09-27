@@ -1,0 +1,64 @@
+h1 {
+  color:#2DB149;
+}
+
+a, a:hover, a:visited {
+  color: #2DB149;
+  text-decoration: none;
+}
+.gohome:hover {
+  color:#2DB149;
+}
+div.content {
+  width: 400px;
+  height: 400px;
+
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding: 10px;
+}
+
+@media all and (max-height: 820px) {
+    div.content{
+        position: relative;
+    }
+}
+
+div.buttons {
+  width: 400px;
+  height: 200px;
+  align-items: center;
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+button.orb-btn
+{
+  width: 200px;
+  height: 200px;
+  font-size: 2.5em;
+}
+
+button.orb-btn:not(.inactive)
+{
+  background-color: rgba(52, 72, 57, 0.75);
+  border: 5px solid rgb(42, 62, 47);
+  display: inline;
+}
+
+button.orb-btn:hover:not(.inactive)
+{
+  background-color: rgba(58, 102, 67, 0.75);
+  border-color: #2DB149;
+}
+
+button.orb-btn:active:not(.inactive)
+{
+  background-color: rgba(52, 72, 57, 0.75);
+  border-color: #2DB149;
+  color: #2DB149;
+}

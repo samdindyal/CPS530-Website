@@ -1,0 +1,54 @@
+body {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+h1 {
+  color:#318FE7;
+}
+
+a, a:hover, a:visited {
+  color: #318FE7;
+  text-decoration: none;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.gohome:hover {
+  color:#318FE7;
+}
+
+button.orb-btn
+{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(59, 59, 59, 0.5);
+  border: 5px solid rgb(59, 59, 59);
+  padding: 5px;
+  margin: 5px;
+}
+
+button.orb-btn.inactive
+{
+  color: #808080;
+}
+
+button.orb-btn:hover:not(.inactive)
+{
+  background-color: rgba(59, 59, 59, 0.75);
+  border-color: #808080;
+}
+
+button.orb-btn:active:not(.inactive)
+{
+  background-color: rgba(69, 69, 69, 0.75);
+  border-color: #808080;
+  color: #808080;
+}

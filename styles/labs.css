@@ -1,0 +1,69 @@
+h1 {
+  color:#ee3e80;
+}
+
+a, a:hover, a:visited {
+  color: #ee3e80;
+  text-decoration: none;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.gohome:hover {
+  color:#ee3e80;
+}
+
+
+button.orb-btn:not(.inactive)
+{
+  background-color: rgba(59, 43, 83, 0.5);
+  border: 5px solid rgb(59, 43, 83);
+  display: inline;
+}
+
+button.orb-btn:hover:not(.inactive)
+{
+  background-color: rgba(59, 43, 83, 0.75);
+  border-color: #ee3e80;
+}
+
+button.orb-btn:active:not(.inactive)
+{
+  background-color: rgba(69, 53, 93, 0.75);
+  border-color: #ee3e80;
+  color: #ee3e80;
+}
+
+div.content {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding: 10px;
+}
+
+@media all and (max-height: 750px) {
+    div.content{
+        position: relative;
+    }
+}
+
+div.buttons {
+  width: 400px;
+  height: 200px;
+  align-items: center;
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding: 10px;
+  text-align: center;
+}
