@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: none;
+  background-size: 100% 20%;
+  background-repeat: repeat-y;
+  color: #ffffff;
+}
+
+body.blue {
+  background: linear-gradient(-45deg, #21c1fd 50%, #3a3a3a 50%);
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+body.red {
+  background: linear-gradient(-45deg, #fd644d, 50%, #3a3a3a 50%);
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+body.green {
+  background: linear-gradient(-45deg, #34e369 50%, #3a3a3a 50%);
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+body.purple {
+  background: linear-gradient(-45deg, #7859a2 50%, #3a3a3a 50%);
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+body.indigo {
+  background: linear-gradient(-45deg, #525dc8 50%, #3a3a3a 50%);
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+body.pink {
+  background: linear-gradient(-45deg, #ffc1cc 50%, #3a3a3a 50%);
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+body.turquoise {
+  background: linear-gradient(-45deg, #1be19e 50%, #3a3a3a 50%);
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+/*simple*/
+
+body.blue-simple {
+  background: none;
+  background-color: #21c1fd;
+}
+
+body.red-simple {
+  background: none;
+  background-color: #fd644d;
+}
+
+body.green-simple {
+  background: none;
+  background-color: #34e369;
+}
+
+body.purple-simple {
+  background: none;
+  background-color: #7859a2;
+}
+
+body.indigo-simple {
+  background: none;
+  background-color: #525dc8;
+}
+
+body.pink-simple {
+  background: none;
+  background-color: #ffc1cc;
+  color: #ffffff;
+}
+
+body.turquoise-simple {
+  background: none;
+  background-color: #1be19e;
+}
+
+select {
+  width: auto;
+}
+
+/*select*/
+
+select.form-control.blue {
+  background-color: #3a3a3a;
+  color: #21c1fd;
+  border: none;
+
+}
+select.form-control.blue:hover {
+  color: #3a3a3a;
+  background-color: #21c1fd;
+  transition: 0.5s;
+}
+
+select.form-control.red {
+  background-color: #3a3a3a;
+  color: #fd644d;
+  border: none;
+}
+select.form-control.red:hover {
+  color: #3a3a3a;
+  background-color: #fd644d;
+  transition: 0.5s;
+}
+
+select.form-control.green {
+  background-color: #3a3a3a;
+  color: #34e369;
+  border: none;
+
+}
+select.form-control.green:hover {
+  color: #3a3a3a;
+  background-color: #34e369;
+  transition: 0.5s;
+}
+
+select.form-control.purple {
+  background-color: #3a3a3a;
+  color: #1be19e;
+  border: none;
+
+}
+select.form-control.purple:hover {
+  color: #3a3a3a;
+  background-color: #7859a2;
+  transition: 0.5s;
+}
+
+select.form-control.indigo {
+  background-color: #3a3a3a;
+  color: #525dc8;
+  border: none;
+
+}
+select.form-control.indigo:hover {
+  color: #3a3a3a;
+  background-color: #525dc8;
+  transition: 0.5s;
+}
+
+select.form-control.pink {
+  background-color: #3a3a3a;
+  color: #ffc1cc;
+  border: none;
+
+}
+select.form-control.pink:hover {
+  color: #3a3a3a;
+  background-color: #ffc1cc;
+  transition: 0.5s;
+}
+
+select.form-control.turquoise {
+  background-color: #3a3a3a;
+  color: #1be19e;
+  border: none;
+
+}
+select.form-control.turquoise:hover {
+  color: #3a3a3a;
+  background-color: #1be19e;
+  transition: 0.5s;
+}
+
+input.btn.btn-default.blue:hover {
+  border-color: #21c1fd;
+}
+input.btn.btn-default.blue:active {
+  background-color: #21c1fd;
+  color: #3a3a3a;
+}
+
+input.btn.btn-default.red:hover {
+  border-color: #fd644d;
+}
+input.btn.btn-default.red:active {
+  background-color: #fd644d;
+  color: #3a3a3a;
+}
+
+input.btn.btn-default.green:hover {
+  border-color: #34e369;
+}
+input.btn.btn-default.green:active {
+  background-color: #34e369;
+  color: #3a3a3a;
+}
+
+input.btn.btn-default.purple:hover {
+  border-color: #1be19e;
+}
+input.btn.btn-default.purple:active {
+  background-color: #1be19e;
+  color: #3a3a3a;
+}
+
+input.btn.btn-default.indigo:hover {
+  border-color: #525dc8;
+}
+input.btn.btn-default.indigo:active {
+  background-color: #525dc8;
+  color: #3a3a3a;
+}
+
+input.btn.btn-default.pink:hover {
+  border-color: #ffc1cc;
+}
+input.btn.btn-default.pink:active {
+  background-color: #ffc1cc;
+  color: #3a3a3a;
+}
+
+input.btn.btn-default.turquoise:hover {
+  border-color: #1be19e;
+}
+input.btn.btn-default.turquoise:active {
+  background-color: #1be19e;
+  color: #3a3a3a;
+}
+
+div.last_visited {
+  text-align: center;
+}

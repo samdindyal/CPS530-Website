@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" title="Bootstrap" charset="utf-8">
+    <link rel="stylesheet" href="../../styles/lab4p2.css" charset="utf-8">
+  </head>
+  <body>
+    <h1>Please enter and rate a song of your choice.</h1>
+    <br><br>
+    <form class="song_rating" action="http://www2.scs.ryerson.ca/~s2dindya/cgi-bin/lab4p2.pl" method="post">
+      <div class="row">
+        <div class="col-xs-6">
+          <input required type="text" name="title" placeholder="Title" class="form-control">
+        </div>
+        <div class="col-xs-6">
+          <input required type="text" name="artist" placeholder="Artist(s)" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <input required type="text" name="album" placeholder="Album" class="form-control">
+        </div>
+        <div class="col-xs-4">
+          <div class="form-group">
+            <select required class="form-control" name="year">
+              <option value="" disabled selected>Year Released</option>
+              <script>
+                for (var i = 2015; i >= 1900; i--)
+                  document.write('<option value="' + i + '">' + i + '</option>')
+              </script>
+            </select>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="form-group">
+            <select required class="form-control" name="rating">
+              <option value="" disabled selected>Your Rating</option>
+              <script>
+                for (var i = 5; i >= 1; i--)
+                  document.write('<option value="' + i + '">' + i + ' star' + (i != 1 ? 's': '') + '</option>')
+              </script>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-9">
+          <input required type="email" name="email" placeholder="Email Address" class="form-control">
+        </div>
+        <div class="col-xs-3">
+          <div class="checkbox">
+            <label>
+              <input required name="subscribe" type="checkbox"> Subscribe to weekly emails
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 submit">
+          <input type="submit" name="submit" class="btn btn-primary">
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

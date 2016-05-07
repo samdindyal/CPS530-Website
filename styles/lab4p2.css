@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body, html, div.container {
+  background-color: rgba(0,0,0,0);
+  font-family: "Open Sans";
+  text-align: center;
+  color: #ffffff;
+}
+
+div.row {
+  padding: 10px;
+}
+
+div.checkbox {
+  text-align: center;
+}
+
+div.submit {
+  text-align: center;
+}
+
+input.btn.btn-primary {
+  font-family: "Open Sans";
+  font-size: 150%;
+  font-weight: 600;
+  display: inline;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #3a3a3a;
+  border: solid 2px #3a3a3a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 25%;
+  transition: 0.5s;
+}
+
+input.btn.btn-primary:hover {
+  border-color: #34e369;
+}
+
+input.btn.btn-primary:active {
+  background-color: #34e369;
+  color: #3a3a3a;
+}

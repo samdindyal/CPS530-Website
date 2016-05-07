@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url('../img/lab2bg.jpg');
+  font-family: 'Open Sans', Helvetica, Calibri, Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-height: 750px) {
+    div.content-viewer{
+        position: relative;
+    }
+}
+
+header {
+  margin: 0px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.75);
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #ffffff;
+  transition: 0.25s;
+}
+
+h1.course-code, h1:hover {
+  color: #0086ed;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 175%;
+}
+
+.lightblue {
+  color: #ade5ff;
+}
+
+a.navbar-element.current {
+  color: #FFFFFF;
+  background-color: #0086ed;
+  -o-transition:0.25s;
+  -ms-transition:0.25s;
+  -moz-transition:0.25s;
+  -webkit-transition:0.25s;
+  transition:0.25s;
+}
+
+a.navbar-element {
+  padding: 10px;
+  background-color: #868686;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 15px;
+  -o-transition:0.25s;
+  -ms-transition:0.25s;
+  -moz-transition:0.25s;
+  -webkit-transition:0.25s;
+  transition:0.25s;
+}
+
+a.navbar-element:first-child{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-right: 0px;
+}
+
+a.navbar-element:last-child{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: 0px;
+}
+
+a.navbar-element.center {
+  border-radius: 0px;
+}
+
+a.navbar-element:hover {
+  background-color: #ade5ff;
+  color: #000000;
+  text-decoration: none;
+  -o-transition:0.25s;
+  -ms-transition:0.25s;
+  -moz-transition:0.25s;
+  -webkit-transition:0.25s;
+  transition:0.25s;
+}
+
+iframe#viewer {
+    border: none;
+    width: 90%;
+    height: 768px;
+    display: inline-block;
+    text-align: center;
+
+    position: relative;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  text-align: left;
+  padding: 5px;
+}
+
+th {
+  text-align: center;
+  padding: 10px;
+  font-size: 150%;
+}
+
+th:first-child
+{
+  font-size: 200%;
+  color: #ade5ff;
+}

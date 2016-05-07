@@ -1,64 +1,272 @@
-h1 {
-  color:#2DB149;
+body {
+  background-color: #222222;
+  color: #dddddd;
 }
 
-a, a:hover, a:visited {
-  color: #2DB149;
+a {
+  color: inherit;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #999999;
   text-decoration: none;
 }
-.gohome:hover {
-  color:#2DB149;
-}
-div.content {
-  width: 400px;
-  height: 400px;
 
-  position: absolute;
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
-  padding: 10px;
+p {
+  text-indent: 30px;
 }
 
-@media all and (max-height: 820px) {
-    div.content{
-        position: relative;
-    }
-}
-
-div.buttons {
-  width: 400px;
-  height: 200px;
-  align-items: center;
-  position: absolute;
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
-  padding: 10px;
+h1 {
   text-align: center;
 }
 
-button.orb-btn
-{
-  width: 200px;
-  height: 200px;
-  font-size: 2.5em;
+.slider {
+  max-width: 100%;
+  margin: 0px auto 30px auto;
+  text-align: center;
 }
 
-button.orb-btn:not(.inactive)
-{
-  background-color: rgba(52, 72, 57, 0.75);
-  border: 5px solid rgb(42, 62, 47);
-  display: inline;
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    height: 430px;
+    border-radius: 3px;
+  }
+
+.slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    background-color: #000000;
+  }
+
+.slide:first-child {
+    display: block;}
+
+.slider-div > a {
+  font-size: 20vw;
+  color: #ffffff;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  line-height: 15vw;
+  height: 15vw;
 }
 
-button.orb-btn:hover:not(.inactive)
-{
-  background-color: rgba(58, 102, 67, 0.75);
-  border-color: #2DB149;
+.slider-div > a:hover {
+  text-decoration: none;
 }
 
-button.orb-btn:active:not(.inactive)
+.slide-1 {
+  background-color: rgb(251, 90, 182);
+}
+
+.slide-2 {
+  background-color: rgb(56, 161, 237);
+}
+
+.slide-3 {
+  background-color: rgb(99, 113, 249);
+}
+
+.slide-4 {
+  background-color: rgb(27, 223, 86);
+}
+
+.slide-5 {
+  background-color: rgb(32, 215, 139);
+}
+
+.slide-6 {
+  background-color: rgb(252, 100, 77);
+}
+
+.slider-div > a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+.slide-buttons {
+  text-align: center;
+}
+
+.slide-btn {
+  border-radius: 50%;
+  border: none;
+	width: 0.3em;
+	height: 0.3em;
+  font-size: 300%;
+  background-color: rgba(56, 56, 56, 0.75);
+  color: rgba(0,0,0,0);
+  margin: 5px;
+  transition: 0.5s;
+}
+
+.slide-btn.active {
+  cursor: pointer;
+}
+
+.btn-1.active {
+  background-color: rgb(251, 90, 182);
+  box-shadow: 0px 0px 5px rgb(251, 90, 182);
+}
+
+.btn-1:hover {
+  background-color: rgb(251, 90, 182);
+}
+
+.btn-2.active {
+  background-color: rgb(56, 161, 237);
+  box-shadow: 0px 0px 5px rgb(56, 161, 237);
+}
+
+.btn-2:hover {
+  background-color: rgb(56, 161, 237);
+}
+
+.btn-3.active {
+  background-color: rgb(99, 113, 249);
+  box-shadow: 0px 0px 5px rgb(99, 113, 249);
+}
+
+.btn-3:hover {
+  background-color: rgb(99, 113, 249);
+}
+
+.btn-4.active {
+  background-color: rgb(27, 223, 86);
+  box-shadow: 0px 0px 5px rgb(27, 223, 86);
+}
+
+.btn-4:hover {
+  background-color: rgb(27, 223, 86);
+}
+
+.btn-5.active {
+  background-color: rgb(32, 215, 139);
+  box-shadow: 0px 0px 5px rgb(32, 215, 139);
+}
+
+.btn-5:hover {
+  background-color: rgb(32, 215, 139);
+}
+
+.btn-6.active {
+  background-color: rgb(252, 100, 77);
+  box-shadow: 0px 0px 5px rgb(252, 100, 77);
+}
+
+.btn-6:hover {
+  background-color: rgb(252, 100, 77);
+}
+
+nav.navbar.navbar-default {
+  background-color: #2e2e2e;
+  border: none;
+}
+
+.navbar-default div.navbar-collapse
 {
-  background-color: rgba(52, 72, 57, 0.75);
-  border-color: #2DB149;
-  color: #2DB149;
+    border-top:none;
+    box-shadow:none;
+}
+
+button.navbar-toggle {
+  border: none;
+  transition: 0.5s;
+}
+
+button.navbar-toggle > span.icon-bar {
+  color: inherit;
+}
+
+div.navbar-header > button.navbar-toggle:hover, button.navbar-toggle[aria-expanded="true"] {
+  background-color: #555555;
+  color: #999999;
+}
+
+.dropdown-menu{
+    min-width:80px;
+}
+
+ul.nav.navbar-nav > li > a {
+  color: #666666;
+  transition: 0.25s;
+}
+
+ul.nav.navbar-nav > li > a:hover {
+  color: #999999;
+}
+
+ul.nav.navbar-nav > li.active > a {
+  background-color: #444444;
+  color: #bbbbbb;
+}
+
+ul.nav.navbar-nav > li.dropdown.open > a {
+  background-color: #535353;
+  color: #ffffff;
+}
+
+ul.nav.navbar-nav > li.dropdown.open > ul.dropdown-menu {
+  background-color: #434343;
+}
+
+ul.nav.navbar-nav > li.dropdown.open > ul.dropdown-menu > li > a {
+  background-color: #434343;
+  color: #999999;
+  text-align: center;
+  transition: 0.25s;
+}
+
+ul.nav.navbar-nav > li.dropdown.open > ul.dropdown-menu > li > a:hover {
+  color: #bbbbbb;
+  background-color: #535353;
+}
+
+ul.nav.navbar-nav > li.active > a:hover {
+  background-color: #434343;
+  color: #ffffff;
+}
+
+div.navbar-header > a.navbar-brand {
+  color: #bbbbbb;
+  transition: 0.5s;
+}
+
+div.navbar-header > a.navbar-brand:hover {
+  color: #ffffff;
+}
+
+@media (max-device-width:700px) {
+  .slide-btn {
+    height: 30px;
+    width: 30px;
+    overflow: visible;
+    font-size: 100%;
+    text-align: left;
+    text-indent: -3px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 5px;
+    transition: 0.5s;
+  }
+
+  .slide-btn.active {
+    color: rgba(0,0,0,0.5);
+  }
+
+  .slide-btn:not(.active):hover {
+    background-color: rgba(56,56,56,0.75);
+  }
+
+  .slide-viewer {
+    max-height: 48vh;
+  }
 }

@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: linear-gradient(45deg, #3a3a3a 50%, #6472f9 50%);
+  background-size: 100% 20%;
+  background-repeat: repeat-y;
+  line-height: 1.5em;
+  font-size: 11pt;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 350%;
+  color: white;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+div.container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 25px;
+  color: #D4D4D4;
+  border-radius: 2%;
+  overflow: scroll;
+  height: 70%;
+  width: 90%;
+  position: absolute;
+  top: 235px; left: 0; bottom: 100px; right: 0;
+}
+
+@media (max-device-height: 700px) {
+    div.container{
+      height:auto;
+    }
+}
+
+nav.navbar {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 25px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 0px;
+}
+
+button.btn:not(.btn-primary)
+{
+  color: #c4c4c4;
+  background-color: #3a3a3a;
+}
+
+button.btn.btn-primary.active {
+
+  display: inline-block;
+  background-color: #6472f9;
+  z-index: 3;
+  -o-transition:0.5s;
+  -ms-transition:0.5s;
+  -moz-transition:0.5s;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+}
+
+button.btn.active:hover {
+  z-index: 2;
+  background-color: #5966db;
+  color: #ffffff;
+  -o-transition:0.5s;
+  -ms-transition:0.5s;
+  -moz-transition:0.5s;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+}
+
+button.btn.btn-primary:active:not(.inactive) {
+  background-color: #525dc8;
+  -o-transition:0.5s;
+  -ms-transition:0.5s;
+  -moz-transition:0.5s;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+}
+
+button.btn {
+  margin: -10px;
+  padding: 5px 25px 5px 25px;
+  z-index: 1;
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  -o-transition:0.5s;
+  -ms-transition:0.5s;
+  -moz-transition:0.5s;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+}
+
+button.btn:first-child
+{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+button.btn:last-child
+{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button.btn:not(.active) {
+  color: #7c7c7c;
+  z-index: 0;
+}
+
+@media screen and (max-width: 600px) {
+  button.btn {
+    margin-bottom: 15px;
+  }
+
+  div.container {
+    top: 275px; left: 0; bottom: 250px; right: 0;
+  }
+}
+
+div.buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+em.due_date {
+  font-weight: bold;
+}
+
+a, a:visited {
+  color: #D4D4D4;
+  transition: 0.25s;
+}
+
+a:hover {
+  color: #6472f9;
+  text-decoration: none;
+}
+
+.title {
+  color: #6472f9;
+  padding-top: 10px;
+}
+
+div.footer {
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  padding: 25px;
+  color: #ffffff;
+  text-align: center;
+}

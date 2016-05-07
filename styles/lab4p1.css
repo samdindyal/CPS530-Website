@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body, html {
+  background-color: none;
+  background: none;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: "Raleway";
+
+  padding: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
