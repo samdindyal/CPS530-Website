@@ -56,7 +56,7 @@
     <div class="container">
       <h1>Welcome to my CPS530 website!</h1>
       <p>
-        My name is Sam Dindyal and this website is my portfolio for a course I took at Ryerson University: Web Systems Development <i>(CPS530)</i>. My lab assignments and term project are both linked to this website in the navigation bar. I should note that my lab assignments are password protected. This was one of the requirements of the assignments however, if you'd like to see them, please send me an email at <a href="mailto:sam.dindyal@icloud.com">sam.dindyal@icloud.com</a> and I'd be more than happy to provide you with the credentials.
+        My name is Sam Dindyal and this website is my portfolio for a course I took at Ryerson University: Web Systems Development <i>(CPS530)</i>. My lab assignments and term project are both linked to this website in the navigation bar. I should note that my lab assignments are password protected. This was one of the requirements of the assignments however, if you'd like to see them, please send me an email at <a href="mailto:sam.dindyal@me.com">sam.dindyal@me.com</a> and I'd be more than happy to provide you with the credentials.
       </p>
         If you'd like to see more of my work, please visit my GitHub profile at <a href="https://github.com/samdindyal">https://github.com/samdindyal</a>.
     </div>
