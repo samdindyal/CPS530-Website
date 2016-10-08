@@ -1,4 +1,3 @@
-<? include_once(dirname(__FILE__) . '/../../../private/info.php') ?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -6,6 +5,7 @@
       <link href="https://validator.w3.org/nu/style.css" rel="stylesheet">
       <title>Showing results for contents of text-input area - Nu Html Checker</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src='/../../../private/info.js'></script>
    </head>
    <body>
       <div id="banner">
@@ -25,7 +25,7 @@
             <li id="l10"><code>      &lt;a href="/~s2dindya/labs" style="text-decoration: none"&gt;&lt;h1 style="color:#ee3e80; margin-top:0px;margin-bottom:5px"&gt;Lab #1&lt;/h1&gt;&lt;/a&gt;</code><code class="lf" title="Line break">↩</code></li>
             <li id="l11"><code>      &lt;h2 style="color:#ffDfF1; margin-top:10px"&gt;</code><code class="lf" title="Line break">↩</code></li>
             <li id="l12"><code>        Sam Dindyal&lt;br&gt;</code><code class="lf" title="Line break">↩</code></li>
-            <li id="l13"><code>        &lt;i&gt;<? echo $student_id ?>&lt;/i&gt;</code><code class="lf" title="Line break">↩</code></li>
+            <li id="l13"><code>        &lt;i&gt;<script type="text/javascript">document.write(studentID || process.env.studentID);</script>&lt;/i&gt;</code><code class="lf" title="Line break">↩</code></li>
             <li id="l14"><code>      &lt;/h2&gt;</code><code class="lf" title="Line break">↩</code></li>
             <li id="l15"><code>    &lt;/header&gt; &lt;!-- End of header --&gt;</code><code class="lf" title="Line break">↩</code></li>
             <li id="l16"><code>    &lt;div class="container"&gt;</code><code class="lf" title="Line break">↩</code></li>

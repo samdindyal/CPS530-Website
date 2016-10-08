@@ -1,4 +1,4 @@
-<? include_once(dirname(__FILE__) . '/../../../private/info.php') ?>
+<script src='/../../../private/info.js'></script>
 </div>
 <div class="footer navbar navbar-default navbar-fixed-bottom">
   <a href="../../">Web Systems Development</a><span class="separator"> | </span>

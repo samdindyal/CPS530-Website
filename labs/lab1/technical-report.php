@@ -1,10 +1,9 @@
-<? include_once(dirname(__FILE__) . '/../../../private/info.php') ?>
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Technical Report</title>
+    <script src='/../../../private/info.js'></script>
   </head>
   <body style="background-color: #ffffff; #2d2d2d;font-family: sans-serif; color: #3d3d3d">
     <h1 style="text-align:center; color:#2d2d2d">Technical Report</h1>
@@ -22,7 +21,7 @@
             <a href="/~s2dindya/labs" style="text-decoration: none"><h1 style="color:#ee3e80; margin-top:0px;margin-bottom:5px">Lab #1</h1></a>
             <h2 style="color:#ffDfF1; margin-top:10px">
               Sam Dindyal<br>
-              <i><? echo $student_id ?></i>
+              <i><script type="text/javascript">document.write(studentID || process.env.studentID);</script></i>
             </h2>
           </header> <!-- End of header -->
           <div class="container">

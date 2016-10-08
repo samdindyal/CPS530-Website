@@ -1,10 +1,10 @@
-<? include_once(dirname(__FILE__) . '/../../../private/info.php') ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 1, CPS530 - Sam Dindyal</title>
+    <script src='/../../../private/info.js'></script>
   </head>
   <body style="background-color: #2d2d2d;color: #ffffff;font-family: sans-serif; text-align: center;">
     <header>
@@ -12,7 +12,11 @@
       <a href="../../" style="text-decoration: none"><h1 style="color:#ee3e80; margin-top:0px;margin-bottom:5px">Lab #1</h1></a>
       <h2 style="color:#ffDfF1; margin-top:10px">
         Sam Dindyal<br>
-        <i><? echo $student_id ?></i>
+        <i>
+          <script type="text/javascript">
+              document.write(studentID || process.env.studentID);
+          </script>
+      </i>
       </h2>
     </header> <!-- End of header -->
     <div class="container">

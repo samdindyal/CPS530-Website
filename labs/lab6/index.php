@@ -1,4 +1,3 @@
-<? include_once(dirname(__FILE__) . '/../../../private/info.php') ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" title="Bootstrap" charset="utf-8">
     <link rel="stylesheet" href="../../styles/lab6.css" charset="utf-8">
+    <script src='/../../../private/info.js'></script>
   </head>
   <body>
     <header>
@@ -49,7 +49,7 @@
       <a href="../../">Web Systems Development</a><span class="separator"> | </span>
       Lab #6<span class="separator"> | </span>
       Sam Dindyal<span class="separator"> | </span>
-      <? echo $student_id ?>
+      <script type="text/javascript">document.write(studentID || process.env.studentID);</script>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
     <script src="../../scripts/lab6.js" charset="utf-8"></script>

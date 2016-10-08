@@ -1,4 +1,3 @@
-<? include_once(dirname(__FILE__) . '/../../../private/info.php') ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,6 +8,7 @@
 		<link rel="stylesheet" href="../../styles/lab4.css" charset="utf-8">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="../../scripts/lab4.js"></script>
+    <script src='/../../../private/info.js'></script>
   </head>
   <body>
     <header>
@@ -26,7 +26,7 @@
       <a href="../../">Web Systems Development</a><span class="separator"> | </span>
       Lab #4<span class="separator"> | </span>
       Sam Dindyal<span class="separator"> | </span>
-      <? echo $student_id ?>
+      <script type="text/javascript">document.write(studentID || process.env.studentID);</script>
     </div>
   </body>
 </html>

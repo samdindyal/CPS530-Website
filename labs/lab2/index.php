@@ -1,4 +1,3 @@
-<? include_once(dirname(__FILE__) . '/../../../private/info.php') ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../styles/lab2.css">
+    <script src='/../../../private/info.js'></script>
   </head>
   <body>
     <header>
@@ -14,7 +14,7 @@
       <a href="../../"><h1>Lab #2</h1></a>
       <h2 class="lightblue">
         Sam Dindyal<br>
-        <i><? echo $student_id ?></i>
+        <i><script type="text/javascript">document.write(studentID || process.env.studentID);</script></i>
       </h2>
     </header> <!-- End of header -->
     <nav>
