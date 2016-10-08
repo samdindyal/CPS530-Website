@@ -13,10 +13,9 @@
       <h2 style="color:#ffDfF1; margin-top:10px">
         Sam Dindyal<br>
         <i>
-          <script type="text/javascript">
-              document.write(studentID || process.env.studentID);
-          </script>
-      </i>
+          <script type="text/javascript">document.write(studentID);</script>
+          <? echo $_ENV["STUDENT_ID"] ?>
+        </i>
       </h2>
     </header> <!-- End of header -->
     <div class="container">

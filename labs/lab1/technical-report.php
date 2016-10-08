@@ -21,7 +21,10 @@
             <a href="/~s2dindya/labs" style="text-decoration: none"><h1 style="color:#ee3e80; margin-top:0px;margin-bottom:5px">Lab #1</h1></a>
             <h2 style="color:#ffDfF1; margin-top:10px">
               Sam Dindyal<br>
-              <i><script type="text/javascript">document.write(studentID || process.env.studentID);</script></i>
+              <i>
+                <script type="text/javascript">document.write(studentID);</script>
+                <? echo $_ENV["STUDENT_ID"] ?>
+              </i>
             </h2>
           </header> <!-- End of header -->
           <div class="container">

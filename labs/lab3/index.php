@@ -66,7 +66,8 @@
 			<a href="../../">Web Systems Development</a><span class="separator"> | </span>
 			Lab #3<span class="separator"> | </span>
 			Sam Dindyal<span class="separator"> | </span>
-			<script type="text/javascript">document.write(studentID || process.env.studentID);</script>
+			<script type="text/javascript">document.write(studentID);</script>
+			<? echo $_ENV["STUDENT_ID"] ?>
 		</div>
 		<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

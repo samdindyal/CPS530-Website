@@ -49,7 +49,8 @@
       <a href="../../">Web Systems Development</a><span class="separator"> | </span>
       Lab #6<span class="separator"> | </span>
       Sam Dindyal<span class="separator"> | </span>
-      <script type="text/javascript">document.write(studentID || process.env.studentID);</script>
+      <script type="text/javascript">document.write(studentID);</script>
+      <? echo $_ENV["STUDENT_ID"] ?>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
     <script src="../../scripts/lab6.js" charset="utf-8"></script>

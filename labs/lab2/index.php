@@ -14,7 +14,10 @@
       <a href="../../"><h1>Lab #2</h1></a>
       <h2 class="lightblue">
         Sam Dindyal<br>
-        <i><script type="text/javascript">document.write(studentID || process.env.studentID);</script></i>
+        <i>
+          <script type="text/javascript">document.write(studentID);</script>
+          <? echo $_ENV["STUDENT_ID"] ?>
+        </i>
       </h2>
     </header> <!-- End of header -->
     <nav>

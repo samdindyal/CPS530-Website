@@ -4,9 +4,7 @@
   <a href="../../">Web Systems Development</a><span class="separator"> | </span>
   Lab #5<span class="separator"> | </span>
   Sam Dindyal<span class="separator"> | </span>
-  <?
-    echo $student_id;
-  ?>
+  <? echo $_ENV["STUDENT_ID"] ?>
 </div>
 </body>
 </html>
