@@ -7,7 +7,7 @@ puts "Content-type: text/html\n\n"
 cgi = CGI.new
 fname = CGI.escape cgi['fname']
 lname = CGI.escape cgi['lname']
-address = CGI.escape cgi['address'].split.map(&:capitalize).join(' ')
+address = cgi['address'].split.map(&:capitalize).join(' ')
 phone = CGI.escape cgi['phone']
 
 puts <<-HTML
@@ -20,19 +20,17 @@ puts <<-HTML
         <li class="list-item">Phone:
 HTML
 
-phone.split('-').each_with_index do |set, index|
-  if index == 0
-    puts "<span class=\"num-set\">(#{set})"
-  else
-    puts "<span class=\"num-set\">#{set}"
-  end
-  if index < phone.split('-').size - 1
-    puts "-"
-  end
-  puts "</span>"
+sets = phone.split('-')
+phone = "<span class=\"num-set\">(#{sets[0]}) </span>"
+
+sets.drop(1).each_with_index do |set, index|
+  sets[index+1] = "<span class=\"num-set\">#{set}</span>"
 end
 
+phone += sets.drop(1).join('-')
+
 puts <<-HTML
+    #{phone}
     </li>
   </ul>
 </div>
